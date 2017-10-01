@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Compile'){
             steps {
-                sh 'mvn -Dmaven.test.failure.ignore=true test'
+                bat 'mvn -Dmaven.test.failure.ignore=true test'
             }
         }
         stage('Integration Test') {
